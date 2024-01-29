@@ -33,6 +33,12 @@ export function getRandomDate() {
     return sliceDate(date)
 }
 
+export function getDefaultDate() {
+    let date = new Date()
+
+    return sliceDate(date)
+}
+
 // function getRandomTime() {
 //     let hour = Math.floor(Math.random() * 24)
 //     let min = 0
@@ -47,6 +53,13 @@ function padStartZero(value) {
 export function getRandomTimeInterval() {
     let fromHour = Math.floor(Math.random() * 24)   // 0-23
     let toHour = fromHour + Math.floor(Math.random() * (24 - fromHour))
+
+    return padStartZero(fromHour) + ':00-' + padStartZero(toHour) + ':00'
+}
+
+export function getDefaultTimeInterval() {
+    let fromHour = 9
+    let toHour = 19
 
     return padStartZero(fromHour) + ':00-' + padStartZero(toHour) + ':00'
 }

@@ -32,7 +32,7 @@ import { DependentFormField, HandlesValidationErrors } from 'laravel-nova';
 import WeekTable from "./../WeekTable";
 import ExceptionsTable from "./../ExceptionsTable";
 import {ExceptionsMixin, WeekMixin} from "../../src/mixins";
-import {getRandomDate, getRandomTimeInterval} from "../../src/func";
+import {getDefaultDate, getDefaultTimeInterval} from "../../src/func";
 export default {
     components: {WeekTable, ExceptionsTable},
 
@@ -63,7 +63,7 @@ export default {
                 ...this[weekOrExceptions],
                 [dayOrDate]: [
                     ...this[weekOrExceptions][dayOrDate] || [],
-                    getRandomTimeInterval()
+                    getDefaultTimeInterval()
                 ],
             };
         },
@@ -73,7 +73,7 @@ export default {
         },
 
         addException() {
-            this.exceptions[getRandomDate()] = [getRandomTimeInterval()];
+            this.exceptions[getDefaultDate()] = [getDefaultTimeInterval()];
         },
 
         removeException(date) {
