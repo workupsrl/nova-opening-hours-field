@@ -1,10 +1,5 @@
 # Nova Opening Hours Field
 
-[![Latest Stable Version](https://poser.pugx.org/sadekd/nova-opening-hours-field/v)](https://packagist.org/packages/sadekd/nova-opening-hours-field)
-[![Total Downloads](https://poser.pugx.org/sadekd/nova-opening-hours-field/downloads)](https://packagist.org/packages/sadekd/nova-opening-hours-field)
-[![License](https://poser.pugx.org/sadekd/nova-opening-hours-field/license)](https://packagist.org/packages/sadekd/nova-opening-hours-field)
-[![PHP Version Require](https://poser.pugx.org/sadekd/nova-opening-hours-field/require/php)](https://packagist.org/packages/sadekd/nova-opening-hours-field)
-
 [Laravel](https://laravel.com) [Nova](https://nova.laravel.com) custom field for [Spatie Opening Hours](https://github.com/spatie/opening-hours)
 
 ### Index
