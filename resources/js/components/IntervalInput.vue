@@ -14,19 +14,20 @@
             v-model="to"
         />
         <span class="ml-2">
-            <danger-button @click.prevent="$emit('removeInterval')"><span class="px-1">-</span></danger-button>
+            <remove-button @click.prevent="$emit('removeInterval')"><span class="px-1">-</span></remove-button>
         </span>
     </div>
 </template>
 
 <script>
 import {useTextInputsProp} from "../src/props";
+import RemoveButton from './RemoveButton';
 import TimeInput from "./TimeInput";
 
 export default {
-    components: {TimeInput},
+    components: {RemoveButton, TimeInput},
 
-    props:  {
+    props: {
         intervalProp: String,
         ...useTextInputsProp,
     },
