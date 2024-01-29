@@ -1,7 +1,6 @@
 <template>
     <default-field :field="currentField" :errors="errors">
         <template #field>
-<!--            <week-table :week="normalizedWeek"/>-->
             <week-table
                 :week="normalizedWeek"
                 :editable="true"
@@ -11,7 +10,7 @@
                 @removeInterval="removeInterval"
                 @removeAllIntervals="removeAllIntervals"
             />
-<!--            <exceptions-table :exceptions="normalizedExceptions"/>-->
+
             <exceptions-table
                 v-if="currentField.allowExceptions"
                 :exceptions="normalizedExceptions"
@@ -89,21 +88,5 @@ export default {
             this.exceptions[newDate] = exception;
         },
     },
-
-    // watch: {
-    //     week: {
-    //         handler(value) {
-    //             console.log('week data updated', value)
-    //         },
-    //         deep: true,
-    //     },
-    //     exceptions: {
-    //         handler(value) {
-    //             console.log('exceptions data updated', value)
-    //         },
-    //         deep: true,
-    //     },
-    // },
-
 }
 </script>

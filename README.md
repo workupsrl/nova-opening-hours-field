@@ -24,7 +24,7 @@
 You can install the package in to a [Laravel](https://laravel.com) app that uses [Nova](https://nova.laravel.com) via composer:
 
 ```bash
-composer require sadekd/nova-opening-hours-field
+composer require workup/nova-opening-hours-field
 ```
 
 ## Usage
